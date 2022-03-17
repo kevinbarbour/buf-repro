@@ -3,3 +3,6 @@ plugins:
   - name: validate
     out: ./gen
     opt: lang=go,paths=source_relative,hostname=,path_prefix=
+  - name: twirp-swagger
+    out: ./gen
+    opt: paths=source_relative,hostname=,path_prefix=
