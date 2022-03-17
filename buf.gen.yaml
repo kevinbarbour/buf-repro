@@ -1,0 +1,5 @@
+version: v1
+plugins:
+  - name: validate
+    out: ./gen
+    opt: lang=go,paths=source_relative,hostname=,path_prefix=

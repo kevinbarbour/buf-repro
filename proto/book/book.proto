@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "validate/validate.proto";
+
+package proto.book;
+option go_package = "srv/book";
+
+message Book {
+    string id = 1 [(validate.rules).string = {
+                    pattern: "^\\d+\\w*$",
+                  }];
+
+  }
